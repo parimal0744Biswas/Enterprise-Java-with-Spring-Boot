@@ -7,7 +7,16 @@ public class Main
 	public static void main(String[] args)
 	{
 		PaymentProcessing pp = new PaymentProcessing();
-		pp.doPayment("Creadit", 100.00);
+		boolean ststus = pp.doPayment("Debit", 100.00);
+
+		if (ststus)
+		{
+			System.out.println("Payment Success");
+		}
+		else
+		{
+			System.out.println("Failed in Payment");
+		}
 	}
 
 }

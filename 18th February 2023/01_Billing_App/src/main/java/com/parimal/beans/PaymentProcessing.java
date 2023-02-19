@@ -2,6 +2,24 @@ package com.parimal.beans;
 
 public class PaymentProcessing
 {
+
+	private IPay cardPayment;
+
+	public PaymentProcessing()
+	{
+		// TODO Auto-generated constructor stub
+	}
+
+	public PaymentProcessing(IPay cardPayment)
+	{
+		this.cardPayment = cardPayment;
+	}
+
+	public void setcatdPayment(IPay cardPayment)
+	{
+		this.cardPayment = cardPayment;
+	}
+
 	public boolean doPayment(String cardType, Double billAmount)
 	{
 
